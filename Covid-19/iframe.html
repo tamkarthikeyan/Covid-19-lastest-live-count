@@ -380,6 +380,7 @@
 
 <body class="noscrollbody" style="background-color: transparent;">
     <div class="container-fluid">
+        <div id="loader" class="loadercenter"></div>
         <div style="height: 50px;"></div>
         <div class="row">
             <div class="col-sm-6">
@@ -433,19 +434,32 @@
         </div>
     </div>
     <script>
+        document.onreadystatechange = function() {
+            if (document.readyState !== "complete") {
+                document.querySelector(
+                    "body").style.visibility = "hidden";
+                document.querySelector(
+                    "#loader").style.visibility = "visible";
+            } else {
+                document.querySelector(
+                    "#loader").style.display = "none";
+                document.querySelector(
+                    "body").style.visibility = "visible";
+            }
+        };
         const width = window.innerWidth || document.documentElement.clientWidth ||
             document.body.clientWidth;
         const height = window.innerHeight || document.documentElement.clientHeight ||
             document.body.clientHeight;
 
         //console.log(width, height);
-        if(width<576 || width==575){
-            document.getElementById("height-check").style.height = height-350 + "px" ;
-            
-        }else{
-            document.getElementById("height-check").style.height = height-190 + "px" ;
+        if (width < 576 || width == 575) {
+            document.getElementById("height-check").style.height = height - 350 + "px";
+
+        } else {
+            document.getElementById("height-check").style.height = height - 190 + "px";
         }
-        
+
         var $el = $(".table-responsive");
 
         function anim() {

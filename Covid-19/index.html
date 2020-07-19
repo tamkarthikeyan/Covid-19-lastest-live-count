@@ -18,9 +18,9 @@
     <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileColor" content="">
     <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+    <meta name="theme-color" content="">
     <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
 
@@ -34,14 +34,14 @@
     <meta property="og:url" content="https://tamkarthikeyan.github.io/Covid-19-lastest-live-count/Covid-19/">
     <meta property="og:title" content="Covid-19 in India: Latest Live Count">
     <meta property="og:description" content="India Coronavirus update with Latest Live Count details: Total Confirmed, Total Active, Total Recovered, Total Deceased">
-    <meta property="og:image" content="assets/thumbnail.png">
+    <meta property="og:image" content="assets/thumbnail.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://tamkarthikeyan.github.io/Covid-19-lastest-live-count/Covid-19/">
     <meta property="twitter:title" content="Covid-19 in India: Latest Live Count">
     <meta property="twitter:description" content="India Coronavirus update with Latest Live Count details: Total Confirmed, Total Active, Total Recovered, Total Deceased">
-    <meta property="twitter:image" content="assets/thumbnail.png">
+    <meta property="twitter:image" content="assets/thumbnail.jpg">
 
 
 
@@ -97,12 +97,7 @@
             text-decoration: none;
             color: #fff960;
         }
-
     </style>
-
-
-
-
 </head>
 
 <body class="noscrollbody background-color">
@@ -111,8 +106,10 @@
         <source src="movie.ogg" type="video/ogg">
         Your browser does not support HTML5 video.
     </video>
+
     <div style="margin-left: -16px"></div>
     <div class="container-fluid">
+        <div id="loader" class="loadercenter"></div>
         <nav class="navbar navbartop navbar-expand-sm justify-content-center fixed-top fadeOutDown" style="background: rgba(0, 0, 0, 0.5); animation-delay: 250ms;">
             <div class="pt-3 text-center">
                 <h1>Battle Against the C<img class="covid" style="margin-top: -5px" src="assets/covid.png" alt="covid" width="32px">vid-1<span class="red" style="font-size: 1.02em ">9</span></h1>
@@ -133,6 +130,20 @@
     </div>
 </body>
 <script>
+    document.onreadystatechange = function() {
+        if (document.readyState !== "complete") {
+            document.querySelector(
+                "body").style.visibility = "hidden";
+            document.querySelector(
+                "#loader").style.visibility = "visible";
+        } else {
+            document.querySelector(
+                "#loader").style.display = "none";
+            document.querySelector(
+                "body").style.visibility = "visible";
+        }
+    };
+
     function resizeIframe(obj) {
         obj.style.height = obj.contentWindow.document.documentElement.scrollHeight - 150 + 'px';
     }
