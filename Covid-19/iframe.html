@@ -380,7 +380,6 @@
 
 <body class="noscrollbody" style="background-color: transparent;">
     <div class="container-fluid">
-        <div id="loader" class="loadercenter"></div>
         <div style="height: 50px;"></div>
         <div class="row">
             <div class="col-sm-6">
@@ -434,7 +433,7 @@
         </div>
     </div>
     <script>
-        document.onreadystatechange = function() {
+        /*document.onreadystatechange = function() {
             if (document.readyState !== "complete") {
                 document.querySelector(
                     "body").style.visibility = "hidden";
@@ -446,7 +445,7 @@
                 document.querySelector(
                     "body").style.visibility = "visible";
             }
-        };
+        };*/
         const width = window.innerWidth || document.documentElement.clientWidth ||
             document.body.clientWidth;
         const height = window.innerHeight || document.documentElement.clientHeight ||
