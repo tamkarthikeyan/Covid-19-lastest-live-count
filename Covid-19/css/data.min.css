@@ -345,11 +345,6 @@ table.table {
         font-size: 12px !important;
     }
 
-    .navbartop {
-        margin-top: -10px !important;
-
-    }
-
     .navbarbottom {
         height: 120px !important;
     }
@@ -364,11 +359,6 @@ table.table {
         font-size: 12px !important;
     }
 
-    .navbartop {
-        margin-top: -10px !important;
-
-    }
-
     .covid {
         width: 26px !important;
     }
@@ -381,11 +371,6 @@ table.table {
 
     p {
         font-size: 12px !important;
-    }
-
-    .navbartop {
-        margin-top: -10px !important;
-        height: 105px !important;
     }
 
     .covid {
