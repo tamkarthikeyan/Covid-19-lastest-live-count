@@ -171,7 +171,8 @@ td {
 .tstate {
     text-align: center;
 }
-.tabright{
+
+.tabright {
     text-align: center;
 }
 
@@ -249,6 +250,22 @@ html {
     background-color: rgba(255, 0, 0, 0.200);
     color: #fc1111;
     font-size: 3em;
+}
+
+.live-red {
+    background-color: rgba(255, 0, 0, 0.5);
+    color: #fff;
+    padding-bottom: 5px;
+    position: absolute;
+    top: 20%;
+    left: 2%;
+    animation: blinking 1.2s infinite;
+}
+
+@keyframes blinking {
+    50% {
+        opacity: 0;
+    }
 }
 
 .tableFixHead {
@@ -392,7 +409,7 @@ table.table {
     h1 {
         font-size: 10px !important;
     }
-
+ 
     p {
         font-size: 12px !important;
     }
@@ -455,6 +472,17 @@ table.table {
     }
 }
 
+@media (max-width:575px){
+       
+    h2 {
+        font-size: 25px !important;
+    }
+    .live-red{
+        top: 162px;
+        left: 4%;
+    }
+}
+
 @media (max-width: 768px) {
     .covid {
         width: 27px !important;
@@ -504,6 +532,7 @@ table.table {
     .covid {
         width: 48px;
          !important;
+
     }
 }
 
