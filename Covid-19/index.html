@@ -1,0 +1,178 @@
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+
+    <!-- Primary Meta Tags -->
+    <title>Covid-19 in India: Latest Live Count</title>
+    <meta name="title" content="Covid-19 in India: Latest Live Count">
+    <meta name="description" content="India Coronavirus update with Latest Live Count details: Total Confirmed, Total Active, Total Recovered, Total Deceased">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tamkarthikeyan.github.io/Covid-19-lastest-live-count/Covid-19/">
+    <meta property="og:title" content="Covid-19 in India: Latest Live Count">
+    <meta property="og:description" content="India Coronavirus update with Latest Live Count details: Total Confirmed, Total Active, Total Recovered, Total Deceased">
+    <meta property="og:image" content="assets/thumbnail.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://tamkarthikeyan.github.io/Covid-19-lastest-live-count/Covid-19/">
+    <meta property="twitter:title" content="Covid-19 in India: Latest Live Count">
+    <meta property="twitter:description" content="India Coronavirus update with Latest Live Count details: Total Confirmed, Total Active, Total Recovered, Total Deceased">
+    <meta property="twitter:image" content="assets/thumbnail.jpg">
+
+
+
+    <link rel="preload" href=" https://www.covid19india.org/fonts/Archia/archia-semibold-webfont.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href=" https://www.covid19india.org/fonts/Archia/archia-medium-webfont.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href=" https://www.covid19india.org/fonts/Archia/archia-bold-webfont.woff2" as="font" type="font/woff2" crossorigin="">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/data.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <style>
+        body,
+        html {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0
+        }
+
+        .second-row {
+            position: absolute;
+            top: 100px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        .second-row iframe {
+            display: block;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        a:link {
+            text-decoration: none;
+        }
+
+        a:visited {
+            text-decoration: none;
+            color: #00ffe1;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: #ff51b0;
+        }
+
+        a:active {
+            text-decoration: none;
+            color: #fff960;
+        }
+
+    </style>
+</head>
+
+<body class="noscrollbody background-color">
+    <video autoplay muted loop id="myVideo">
+        <source src="assets/comp-video.mp4" type="video/mp4">
+        <source src="assets/comp-audio.ogg" type="video/ogg">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <div style="margin-left: -16px"></div>
+    <div class="container-fluid">
+        <div id="loader" class="loadercenter">
+            <div class="container-open-loader">
+                <div class="loader">
+                    <div class="loader">
+                        <div class="loader">
+                            <div class="loader">
+                                <div class="loader">
+                                    <div class="loader">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbartop navbar-expand-sm justify-content-center fixed-top fadeOutDown" style="background: rgba(0, 0, 0, 0.5); animation-delay: 250ms;">
+            <div class="pt-3 text-center">
+                <h1>Battle Against the C<img class="covid" style="margin-top: -5px" src="assets/covid.png" alt="covid" width="32px">vid-1<span class="red" style="font-size: 1.02em ">9</span></h1>
+                <p>India Coronavirus update with Latest Live Count details: Total Confirmed, Total Active, Total Recovered, Total Deceased</p>
+            </div>
+        </nav>
+        <nav class="navbar navbarbottom navbar-expand-sm justify-content-center fixed-bottom fadeInUp" style="background: rgba(0, 0, 0, 0.5); animation-delay: 250ms;">
+            <div class="text-center">
+                <h1>C<img style="margin-top: -5px" class="covid" src="assets/covid.png" alt="covid" width="32px">vid-1<span class="red" style="font-size: 1.02em ">9</span> in India: Latest Live Count</h1>
+                <p>Created By <a href="https://takardigital.blogspot.com/p/blog-page.html" target="_blank"><span class="green" style="font-size: 1.1em ">Karthikeyan</span></a> <span class="red" style="font-size: 1.1em ">|</span> All Right Reserved <span class="red" style="font-size: 1.1em ">©</span> 2020 <a href="https://takardigital.blogspot.com/" target="_blank"><span class="blue" style="font-size: 1.1em ">Takar Digital</span></a></p>
+            </div>
+        </nav>
+        <div class="row">
+            <div class="second-row">
+                <iframe id="iframe" src="iframe.html" title="live countdown" allowtransparency="true" width="100%" frameborder="0" scrolling="no" onload="resizeIframe(this)"></iframe>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    document.onreadystatechange = function() {
+        if (document.readyState !== "complete") {
+            document.querySelector(
+                "body").style.visibility = "hidden";
+            document.querySelector(
+                "#loader").style.visibility = "visible";
+        } else {
+            document.querySelector(
+                "#loader").style.display = "none";
+            document.querySelector(
+                "body").style.visibility = "visible";
+        }
+    };
+
+    function resizeIframe(obj) {
+        //obj.style.height = obj.contentWindow.document.documentElement.scrollHeight - 150 + 'px';
+    }
+
+    window.setInterval(function() {
+        reloadIFrame()
+    }, 500000);
+
+    function reloadIFrame() {
+        console.log('reloading..');
+        document.getElementById('iframe').contentWindow.location.reload();
+    }
+
+</script>
+
+</html>
