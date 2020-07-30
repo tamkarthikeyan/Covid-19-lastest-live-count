@@ -40,10 +40,59 @@
     font-display: swap;
 }
 
-#loader {
-    width: 70px;
-    height: 70px;
+.container-open-loader {
+    transform: translate(-50%, 80%);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    top: 17%;
+    left: 50%;
+    right: 50%;
+    bottom: 50%;
+    animation: colorize 2s ease infinite;
+    overflow: hidden;
 }
+
+@keyframes colorize {
+    20% {
+        filter: hue-rotate(72deg);
+    }
+
+    40% {
+        filter: hue-rotate(144deg);
+    }
+
+    60% {
+        filter: hue-rotate(216deg);
+    }
+
+    80% {
+        filter: hue-rotate(288deg);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+.loader {
+    width: calc(100% - 18px);
+    height: calc(100% - 18px);
+    position: absolute;
+    border-top: 5px solid #09f;
+    border-radius: 50%;
+    animation-fill-mode: forwards;
+    animation: rotating 2s 0.5s linear infinite;
+}
+
+@keyframes rotating {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
 
 .loadercenter {
     position: absolute;
@@ -120,6 +169,9 @@ td {
 }
 
 .tstate {
+    text-align: center;
+}
+.tabright{
     text-align: center;
 }
 

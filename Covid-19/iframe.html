@@ -433,19 +433,6 @@
         </div>
     </div>
     <script>
-        /*document.onreadystatechange = function() {
-            if (document.readyState !== "complete") {
-                document.querySelector(
-                    "body").style.visibility = "hidden";
-                document.querySelector(
-                    "#loader").style.visibility = "visible";
-            } else {
-                document.querySelector(
-                    "#loader").style.display = "none";
-                document.querySelector(
-                    "body").style.visibility = "visible";
-            }
-        };*/
         const width = window.innerWidth || document.documentElement.clientWidth ||
             document.body.clientWidth;
         const height = window.innerHeight || document.documentElement.clientHeight ||
@@ -480,12 +467,12 @@
         var tablehtml = '<table id="contentlisttable" class="tableFixHead center" style="width:60%"><thead>' +
             '<tr>' +
             '<th scope="col" class="tstate" onclick="sortTable(0)">State</th>' +
-            '<th onclick="sortTable(1)">Confirmed</th>' +
-            '<th onclick="sortTable(2)">Active</th>' +
-            '<th onclick="sortTable(3)">Recovered</th>' +
-            '<th onclick="sortTable(4)">Deceased</th>' +
-            '<th onclick="sortTable(5)">Tested</th>' +
-            '<th onclick="sortTable(6)">Population</th>' +
+            '<th class="tabright" onclick="sortTable(1)">Confirmed</th>' +
+            '<th class="tabright" onclick="sortTable(2)">Active</th>' +
+            '<th class="tabright" onclick="sortTable(3)">Recovered</th>' +
+            '<th class="tabright" onclick="sortTable(4)">Deceased</th>' +
+            '<th class="tabright" onclick="sortTable(5)">Tested</th>' +
+            '<th class="tabright" onclick="sortTable(6)">Population</th>' +
             '</tr>' +
             '</thead><tbody>';
         //---------------------------------------------------------Himachal Pradesh---------------------------------------------------------//
