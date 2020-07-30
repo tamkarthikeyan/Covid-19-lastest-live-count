@@ -55,6 +55,10 @@
 }
 
 @keyframes colorize {
+    0% {
+        filter: hue-rotate(1deg);
+    }
+
     20% {
         filter: hue-rotate(72deg);
     }
@@ -409,7 +413,7 @@ table.table {
     h1 {
         font-size: 10px !important;
     }
- 
+
     p {
         font-size: 12px !important;
     }
@@ -472,12 +476,13 @@ table.table {
     }
 }
 
-@media (max-width:575px){
-       
+@media (max-width:575px) {
+
     h2 {
         font-size: 25px !important;
     }
-    .live-red{
+
+    .live-red {
         top: 162px;
         left: 4%;
     }
