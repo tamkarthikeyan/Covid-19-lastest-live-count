@@ -405,7 +405,7 @@
                             </div>
                             <div class="level-item tcenter is-active fadeInUp" style="animation-delay: 1000ms;">
                                 <h5>Active</h5>
-                                <h4>&nbsp;</h4>
+                                <h4 class="TT-delta-migrated"></h4>
                                 <h3 class="TT-total-migrated"></h3>
                             </div>
                             <div class="level-item tcenter is-recovered fadeInUp" style="animation-delay: 1250ms;">
@@ -877,10 +877,11 @@
         //---------------------------------------------------------India---------------------------------------------------------//
         var TT_delta_confirmed = ' ',
             TT_delta_deceased = ' ',
+			TT_delta_migrated_value = ' ',
             TT_delta_recovered = ' ',
             TT_delta_tested = ' ',
             TT_meta_population = ' ';
-        TT_meta_last_updated = ' ';
+			TT_meta_last_updated = ' ';
         var TT_total_confirmed = 0,
             TT_total_deceased = 0,
             TT_total_migrated = 0,
@@ -910,7 +911,7 @@
                 $(data.HP.meta).each(function(index, value) {
                     console.log('population : ' + value.population);
                 });*/
-
+				function Maharashtra(){
                 //---------------------------------------------------------Maharashtra---------------------------------------------------------//
                 $(data.MH.delta).each(function(index, value) {
                     MH_delta_confirmed = value.confirmed;
@@ -991,7 +992,9 @@
                     '<td><span class="yellow">' + MH_delta_tested + '</span><br>' + MH_total_tested.toLocaleString() + '</td>' +
                     '<td><br>' + MH_meta_population.toLocaleString() + '</td>' +
                     '</tr>';
-
+					}
+				
+				function Tamil_Nadu(){
                 //---------------------------------------------------------Tamil Nadu---------------------------------------------------------//
                 $(data.TN.delta).each(function(index, value) {
                     TN_delta_confirmed = value.confirmed;
@@ -1073,7 +1076,9 @@
                     '<td><span class="yellow">' + TN_delta_tested + '</span><br>' + TN_total_tested.toLocaleString() + '</td>' +
                     '<td><br>' + TN_meta_population.toLocaleString() + '</td>' +
                     '</tr>';
+					}
 
+				function Delhi(){
                 //---------------------------------------------------------Delhi---------------------------------------------------------//
                 $(data.DL.delta).each(function(index, value) {
                     DL_delta_confirmed = value.confirmed;
@@ -1154,7 +1159,9 @@
                     '<td><span class="yellow">' + DL_delta_tested + '</span><br>' + DL_total_tested.toLocaleString() + '</td>' +
                     '<td><br>' + DL_meta_population.toLocaleString() + '</td>' +
                     '</tr>';
-
+					}
+					
+				function Andhra_Pradesh(){	
                 //---------------------------------------------------------Andhra Pradesh---------------------------------------------------------//
                 $(data.AP.delta).each(function(index, value) {
                     AP_delta_confirmed = value.confirmed;
@@ -1235,7 +1242,9 @@
                     '<td><span class="yellow">' + AP_delta_tested + '</span><br>' + AP_total_tested.toLocaleString() + '</td>' +
                     '<td><br>' + AP_meta_population.toLocaleString() + '</td>' +
                     '</tr>';
-
+					}
+					
+				function Karnataka(){	
                 //---------------------------------------------------------Karnataka---------------------------------------------------------//
                 $(data.KA.delta).each(function(index, value) {
                     KA_delta_confirmed = value.confirmed;
@@ -1316,7 +1325,9 @@
                     '<td><span class="yellow">' + KA_delta_tested + '</span><br>' + KA_total_tested.toLocaleString() + '</td>' +
                     '<td><br>' + KA_meta_population.toLocaleString() + '</td>' +
                     '</tr>';
-
+					}
+					
+				function Uttar_Pradesh(){	
                 //---------------------------------------------------------Uttar Pradesh---------------------------------------------------------//
                 $(data.UP.delta).each(function(index, value) {
                     UP_delta_confirmed = value.confirmed;
@@ -1397,6 +1408,9 @@
                     '<td><span class="yellow">' + UP_delta_tested + '</span><br>' + UP_total_tested.toLocaleString() + '</td>' +
                     '<td><br>' + UP_meta_population.toLocaleString() + '</td>' +
                     '</tr>';
+					}
+					
+					function West_Bengal(){
 
                 //---------------------------------------------------------West Bengal---------------------------------------------------------//
                 $(data.WB.delta).each(function(index, value) {
@@ -1478,7 +1492,9 @@
                     '<td><span class="yellow">' + WB_delta_tested + '</span><br>' + WB_total_tested.toLocaleString() + '</td>' +
                     '<td><br>' + WB_meta_population.toLocaleString() + '</td>' +
                     '</tr>';
-
+					}
+					
+					function Telangana(){
                 //---------------------------------------------------------Telangana---------------------------------------------------------//
                 $(data.TG.delta).each(function(index, value) {
                     TG_delta_confirmed = value.confirmed;
@@ -1559,7 +1575,9 @@
                     '<td><span class="yellow">' + TG_delta_tested + '</span><br>' + TG_total_tested.toLocaleString() + '</td>' +
                     '<td><br>' + TG_meta_population.toLocaleString() + '</td>' +
                     '</tr>';
-
+					}
+					
+					function Gujarat(){
                 //---------------------------------------------------------Gujarat---------------------------------------------------------//
                 $(data.GJ.delta).each(function(index, value) {
                     GJ_delta_confirmed = value.confirmed;
@@ -1640,7 +1658,9 @@
                     '<td><span class="yellow">' + GJ_delta_tested + '</span><br>' + GJ_total_tested.toLocaleString() + '</td>' +
                     '<td><br>' + GJ_meta_population.toLocaleString() + '</td>' +
                     '</tr>';
-
+					}
+					
+					function Bihar(){
                 //---------------------------------------------------------Bihar---------------------------------------------------------//
                 $(data.BR.delta).each(function(index, value) {
                     BR_delta_confirmed = value.confirmed;
@@ -1721,7 +1741,9 @@
                     '<td><span class="yellow">' + BR_delta_tested + '</span><br>' + BR_total_tested.toLocaleString() + '</td>' +
                     '<td><br>' + BR_meta_population.toLocaleString() + '</td>' +
                     '</tr>';
-
+					}
+					
+					function Rajasthan(){
                 //---------------------------------------------------------Rajasthan---------------------------------------------------------//
                 $(data.RJ.delta).each(function(index, value) {
                     RJ_delta_confirmed = value.confirmed;
@@ -1802,7 +1824,9 @@
                     '<td><span class="yellow">' + RJ_delta_tested + '</span><br>' + RJ_total_tested.toLocaleString() + '</td>' +
                     '<td><br>' + RJ_meta_population.toLocaleString() + '</td>' +
                     '</tr>';
-
+					}
+					
+					function Assam(){
                 //---------------------------------------------------------Assam---------------------------------------------------------//
                 $(data.AS.delta).each(function(index, value) {
                     AS_delta_confirmed = value.confirmed;
@@ -1883,7 +1907,9 @@
                     '<td><span class="yellow">' + AS_delta_tested + '</span><br>' + AS_total_tested.toLocaleString() + '</td>' +
                     '<td><br>' + AS_meta_population.toLocaleString() + '</td>' +
                     '</tr>';
-
+					}
+					
+					function Haryana(){
                 //---------------------------------------------------------Haryana---------------------------------------------------------//
                 $(data.HR.delta).each(function(index, value) {
                     HR_delta_confirmed = value.confirmed;
@@ -1964,7 +1990,9 @@
                     '<td><span class="yellow">' + HR_delta_tested + '</span><br>' + HR_total_tested.toLocaleString() + '</td>' +
                     '<td><br>' + HR_meta_population.toLocaleString() + '</td>' +
                     '</tr>';
-
+					}
+					
+					function Odisha(){
                 //---------------------------------------------------------Odisha---------------------------------------------------------//
                 $(data.OR.delta).each(function(index, value) {
                     OR_delta_confirmed = value.confirmed;
@@ -2045,7 +2073,9 @@
                     '<td><span class="yellow">' + OR_delta_tested + '</span><br>' + OR_total_tested.toLocaleString() + '</td>' +
                     '<td><br>' + OR_meta_population.toLocaleString() + '</td>' +
                     '</tr>';
-
+					}
+					
+					function Madhya_Pradesh(){
                 //---------------------------------------------------------Madhya Pradesh---------------------------------------------------------//
                 $(data.MP.delta).each(function(index, value) {
                     MP_delta_confirmed = value.confirmed;
@@ -2126,7 +2156,9 @@
                     '<td><span class="yellow">' + MP_delta_tested + '</span><br>' + MP_total_tested.toLocaleString() + '</td>' +
                     '<td><br>' + MP_meta_population.toLocaleString() + '</td>' +
                     '</tr>';
-
+					}
+					
+					function Kerala(){
                 //---------------------------------------------------------Kerala---------------------------------------------------------//
                 $(data.KL.delta).each(function(index, value) {
                     KL_delta_confirmed = value.confirmed;
@@ -2207,7 +2239,9 @@
                     '<td><span class="yellow">' + KL_delta_tested + '</span><br>' + KL_total_tested.toLocaleString() + '</td>' +
                     '<td><br>' + KL_meta_population.toLocaleString() + '</td>' +
                     '</tr>';
-
+					}
+					
+					function Jammu_and_Kashmir(){
                 //---------------------------------------------------------Jammu and Kashmir---------------------------------------------------------//
                 $(data.JK.delta).each(function(index, value) {
                     JK_delta_confirmed = value.confirmed;
@@ -2288,7 +2322,9 @@
                     '<td><span class="yellow">' + JK_delta_tested + '</span><br>' + JK_total_tested.toLocaleString() + '</td>' +
                     '<td><br>' + JK_meta_population.toLocaleString() + '</td>' +
                     '</tr>';
-
+					}
+					
+					function Punjab(){
                 //---------------------------------------------------------Punjab---------------------------------------------------------//
                 $(data.PB.delta).each(function(index, value) {
                     PB_delta_confirmed = value.confirmed;
@@ -2369,7 +2405,9 @@
                     '<td><span class="yellow">' + PB_delta_tested + '</span><br>' + PB_total_tested.toLocaleString() + '</td>' +
                     '<td><br>' + PB_meta_population.toLocaleString() + '</td>' +
                     '</tr>';
-
+					}
+					
+					function Jharkhand(){
                 //---------------------------------------------------------Jharkhand---------------------------------------------------------//
                 $(data.JH.delta).each(function(index, value) {
                     JH_delta_confirmed = value.confirmed;
@@ -2450,7 +2488,9 @@
                     '<td><span class="yellow">' + JH_delta_tested + '</span><br>' + JH_total_tested.toLocaleString() + '</td>' +
                     '<td><br>' + JH_meta_population.toLocaleString() + '</td>' +
                     '</tr>';
-
+					}
+					
+					function Chhattisgarh(){
                 //---------------------------------------------------------Chhattisgarh---------------------------------------------------------// 
                 $(data.CT.delta).each(function(index, value) {
                     CT_delta_confirmed = value.confirmed;
@@ -2531,7 +2571,9 @@
                     '<td><span class="yellow">' + CT_delta_tested + '</span><br>' + CT_total_tested.toLocaleString() + '</td>' +
                     '<td><br>' + CT_meta_population.toLocaleString() + '</td>' +
                     '</tr>';
-
+					}
+					
+					function Uttarakhand(){
                 //---------------------------------------------------------Uttarakhand---------------------------------------------------------//
                 $(data.UT.delta).each(function(index, value) {
                     UT_delta_confirmed = value.confirmed;
@@ -2612,7 +2654,9 @@
                     '<td><span class="yellow">' + UT_delta_tested + '</span><br>' + UT_total_tested.toLocaleString() + '</td>' +
                     '<td><br>' + UT_meta_population.toLocaleString() + '</td>' +
                     '</tr>';
-
+					}
+					
+					function Goa(){
                 //---------------------------------------------------------Goa---------------------------------------------------------//
                 $(data.GA.delta).each(function(index, value) {
                     GA_delta_confirmed = value.confirmed;
@@ -2693,7 +2737,9 @@
                     '<td><span class="yellow">' + GA_delta_tested + '</span><br>' + GA_total_tested.toLocaleString() + '</td>' +
                     '<td><br>' + GA_meta_population.toLocaleString() + '</td>' +
                     '</tr>';
-
+					}
+					
+					function Tripura(){
                 //---------------------------------------------------------Tripura---------------------------------------------------------//
                 $(data.TR.delta).each(function(index, value) {
                     TR_delta_confirmed = value.confirmed;
@@ -2774,7 +2820,9 @@
                     '<td><span class="yellow">' + TR_delta_tested + '</span><br>' + TR_total_tested.toLocaleString() + '</td>' +
                     '<td><br>' + TR_meta_population.toLocaleString() + '</td>' +
                     '</tr>';
-
+					}
+					
+					function Puducherry(){
                 //---------------------------------------------------------Puducherry---------------------------------------------------------//
                 $(data.PY.delta).each(function(index, value) {
                     PY_delta_confirmed = value.confirmed;
@@ -2855,7 +2903,9 @@
                     '<td><span class="yellow">' + PY_delta_tested + '</span><br>' + PY_total_tested.toLocaleString() + '</td>' +
                     '<td><br>' + PY_meta_population.toLocaleString() + '</td>' +
                     '</tr>';
-
+					}
+					
+					function Manipur(){
                 //---------------------------------------------------------Manipur---------------------------------------------------------//
                 $(data.MN.delta).each(function(index, value) {
                     MN_delta_confirmed = value.confirmed;
@@ -2936,7 +2986,9 @@
                     '<td><span class="yellow">' + MN_delta_tested + '</span><br>' + MN_total_tested.toLocaleString() + '</td>' +
                     '<td><br>' + MN_meta_population.toLocaleString() + '</td>' +
                     '</tr>';
-
+					}
+					
+					function Himachal_Pradesh(){
                 //---------------------------------------------------------Himachal Pradesh---------------------------------------------------------//
                 $(data.HP.delta).each(function(index, value) {
                     HP_delta_confirmed = value.confirmed;
@@ -3017,7 +3069,9 @@
                     '<td><span class="yellow">' + HP_delta_tested + '</span><br>' + HP_total_tested.toLocaleString() + '</td>' +
                     '<td><br>' + HP_meta_population.toLocaleString() + '</td>' +
                     '</tr>';
-
+					}
+					
+					function Nagaland(){
                 //---------------------------------------------------------Nagaland---------------------------------------------------------//
                 $(data.NL.delta).each(function(index, value) {
                     NL_delta_confirmed = value.confirmed;
@@ -3098,7 +3152,9 @@
                     '<td><span class="yellow">' + NL_delta_tested + '</span><br>' + NL_total_tested.toLocaleString() + '</td>' +
                     '<td><br>' + NL_meta_population.toLocaleString() + '</td>' +
                     '</tr>';
-
+					}
+					
+					function Arunachal_Pradesh(){
                 //---------------------------------------------------------Arunachal Pradesh---------------------------------------------------------//
                 $(data.AR.delta).each(function(index, value) {
                     AR_delta_confirmed = value.confirmed;
@@ -3179,7 +3235,9 @@
                     '<td><span class="yellow">' + AR_delta_tested + '</span><br>' + AR_total_tested.toLocaleString() + '</td>' +
                     '<td><br>' + AR_meta_population.toLocaleString() + '</td>' +
                     '</tr>';
-
+					}
+					
+					function Ladakh(){
                 //---------------------------------------------------------Ladakh---------------------------------------------------------//
                 $(data.LA.delta).each(function(index, value) {
                     LA_delta_confirmed = value.confirmed;
@@ -3260,7 +3318,9 @@
                     '<td><span class="yellow">' + LA_delta_tested + '</span><br>' + LA_total_tested.toLocaleString() + '</td>' +
                     '<td><br>' + LA_meta_population.toLocaleString() + '</td>' +
                     '</tr>';
-
+					}
+					
+					function Dadra_and_Nagar_Haveli_and_Daman_and_Diu(){
                 //---------------------------------------------------------Dadra and Nagar Haveli and Daman and Diu---------------------------------------------------------//
                 $(data.DN.delta).each(function(index, value) {
                     DN_delta_confirmed = value.confirmed;
@@ -3341,7 +3401,9 @@
                     '<td><span class="yellow">' + DN_delta_tested + '</span><br>' + DN_total_tested.toLocaleString() + '</td>' +
                     '<td><br>' + DN_meta_population.toLocaleString() + '</td>' +
                     '</tr>';
-
+					}
+					
+					function Chandigarh(){
                 //---------------------------------------------------------Chandigarh---------------------------------------------------------//
                 $(data.CH.delta).each(function(index, value) {
                     CH_delta_confirmed = value.confirmed;
@@ -3422,7 +3484,9 @@
                     '<td><span class="yellow">' + CH_delta_tested + '</span><br>' + CH_total_tested.toLocaleString() + '</td>' +
                     '<td><br>' + CH_meta_population.toLocaleString() + '</td>' +
                     '</tr>';
-
+					}
+					
+					function Meghalaya(){
                 //---------------------------------------------------------Meghalaya---------------------------------------------------------//
                 $(data.ML.delta).each(function(index, value) {
                     ML_delta_confirmed = value.confirmed;
@@ -3503,7 +3567,9 @@
                     '<td><span class="yellow">' + ML_delta_tested + '</span><br>' + ML_total_tested.toLocaleString() + '</td>' +
                     '<td><br>' + ML_meta_population.toLocaleString() + '</td>' +
                     '</tr>';
-
+					}
+					
+					function Sikkim(){
                 //---------------------------------------------------------Sikkim---------------------------------------------------------//
                 $(data.SK.delta).each(function(index, value) {
                     SK_delta_confirmed = value.confirmed;
@@ -3584,7 +3650,9 @@
                     '<td><span class="yellow">' + SK_delta_tested + '</span><br>' + SK_total_tested.toLocaleString() + '</td>' +
                     '<td><br>' + SK_meta_population.toLocaleString() + '</td>' +
                     '</tr>';
-
+					}
+					
+					function Andaman_and_Nicobar(){
                 //---------------------------------------------------------Andaman and Nicobar Islands---------------------------------------------------------//
                 $(data.AN.delta).each(function(index, value) {
                     AN_delta_confirmed = value.confirmed;
@@ -3665,7 +3733,9 @@
                     '<td><span class="yellow">' + AN_delta_tested + '</span><br>' + AN_total_tested.toLocaleString() + '</td>' +
                     '<td><br>' + AN_meta_population.toLocaleString() + '</td>' +
                     '</tr>';
-
+					}
+					
+					function Mizoram(){
                 //---------------------------------------------------------Mizoram---------------------------------------------------------//
                 $(data.MZ.delta).each(function(index, value) {
                     MZ_delta_confirmed = value.confirmed;
@@ -3746,7 +3816,9 @@
                     '<td><span class="yellow">' + MZ_delta_tested + '</span><br>' + MZ_total_tested.toLocaleString() + '</td>' +
                     '<td><br>' + MZ_meta_population.toLocaleString() + '</td>' +
                     '</tr>';
-
+					}
+					
+					function Lakshadweep(){
                 /* //---------------------------------------------------------Lakshadweep---------------------------------------------------------//
                  $(data.UN.delta).each(function(index, value) {
                      LD_delta_confirmed = value.confirmed;
@@ -3827,35 +3899,37 @@
                      '<td><span class="yellow">' + LD_delta_tested + '</span><br>' + LD_total_tested.toLocaleString() + '</td>' +
                      '<td><br>' + LD_meta_population.toLocaleString() + '</td>' +
                      '</tr>';*/
-
+					 }
+					 
+					 function India(){
                 //---------------------------------------------------------India---------------------------------------------------------//
                 $(data.TT.delta).each(function(index, value) {
                     TT_delta_confirmed = value.confirmed;
                     if (typeof TT_delta_confirmed == "undefined") {
                         TT_delta_confirmed = ' ';
                     } else {
-                        TT_delta_confirmed = TT_delta_confirmed.toLocaleString();
+                        TT_delta_confirmed = TT_delta_confirmed;
                     }
 
                     TT_delta_recovered = value.recovered;
                     if (typeof TT_delta_recovered == "undefined") {
                         TT_delta_recovered = ' ';
                     } else {
-                        TT_delta_recovered = TT_delta_recovered.toLocaleString();
+                        TT_delta_recovered = TT_delta_recovered;
                     }
 
                     TT_delta_deceased = value.deceased;
                     if (typeof TT_delta_deceased == "undefined") {
                         TT_delta_deceased = ' ';
                     } else {
-                        TT_delta_deceased = TT_delta_deceased.toLocaleString();
+                        TT_delta_deceased = TT_delta_deceased;
                     }
 
                     TT_delta_tested = value.tested;
                     if (typeof TT_delta_tested == "undefined") {
                         TT_delta_tested = '↑' + total_test.toLocaleString();
                     } else {
-                        TT_delta_tested = '↑' + TT_delta_tested.toLocaleString();
+                        TT_delta_tested = '↑' + TT_delta_tested;
                     }
                 });
                 $(data.TT.total).each(function(index, value) {
@@ -3894,6 +3968,7 @@
                         TT_total_tested = TT_total_tested;
                     }
                     TT_total_migrated_value = TT_total_confirmed - TT_total_migrated - TT_total_recovered - TT_total_deceased;
+					TT_delta_migrated_value = TT_delta_confirmed - TT_delta_recovered - TT_delta_deceased;
                 });
                 $(data.TT.meta).each(function(index, value) {
                     TT_meta_population = value.population;
@@ -3901,14 +3976,52 @@
                 });
                 tablehtml += '<tr>' +
                     '<td scope="row" style="vertical-align: middle; text-align:left">India</td>' +
-                    '<td><span class="red">' + '↑' + TT_delta_confirmed + '</span><br>' + TT_total_confirmed.toLocaleString() + '</td>' +
-                    '<td><br>' + TT_total_migrated_value.toLocaleString() + '</td>' +
-                    '<td><span class="green">' + '↑' + TT_delta_recovered + '</span><br>' + TT_total_recovered.toLocaleString() + '</td>' +
-                    '<td><span class="raven">' + '↑' + TT_delta_deceased + '</span><br>' + TT_total_deceased.toLocaleString() + '</td>' +
-                    '<td><span class="yellow">' + TT_delta_tested + '</span><br>' + TT_total_tested.toLocaleString() + '</td>' +
+                    '<td><span class="red">' + '↑' + TT_delta_confirmed.toLocaleString() + '</span><br>' + TT_total_confirmed.toLocaleString() + '</td>' +
+                    '<td><span class="red">' + '↑' + TT_delta_migrated_value.toLocaleString() + '</span><br>' + TT_total_migrated_value.toLocaleString() + '</td>' +
+                    '<td><span class="green">' + '↑' + TT_delta_recovered.toLocaleString() + '</span><br>' + TT_total_recovered.toLocaleString() + '</td>' +
+                    '<td><span class="raven">' + '↑' + TT_delta_deceased.toLocaleString() + '</span><br>' + TT_total_deceased.toLocaleString() + '</td>' +
+                    '<td><span class="yellow">' + TT_delta_tested.toLocaleString() + '</span><br>' + TT_total_tested.toLocaleString() + '</td>' +
                     '<td><br>' + TT_meta_population.toLocaleString() + '</td>' +
                     '</tr>';
-
+					}
+					
+					Maharashtra();
+					Tamil_Nadu();
+					Andhra_Pradesh();
+					Karnataka();
+					Delhi();
+					Uttar_Pradesh();
+					West_Bengal();
+					Telangana();
+					Bihar();
+					Gujarat();
+					Assam();
+					Rajasthan();
+					Odisha();
+					Haryana();
+					Madhya_Pradesh();
+					Kerala();
+					Jammu_and_Kashmir();
+					Punjab();
+					Jharkhand();
+					Chhattisgarh();
+					Uttarakhand();
+					Goa();
+					Tripura();
+					Puducherry();
+					Manipur();
+					Himachal_Pradesh();
+					Nagaland();
+					Arunachal_Pradesh();
+					Ladakh();
+					Dadra_and_Nagar_Haveli_and_Daman_and_Diu();
+					Chandigarh();
+					Andaman_and_Nicobar();
+					Meghalaya();
+					Sikkim();
+					Mizoram();
+					//function Lakshadweep();
+					India();
                 tablehtml += '</tbody></table>';
                 $('.load-data').html(tablehtml);
                 var dtformat = moment(TT_meta_last_updated).format('DD MMM, h:mm A')
@@ -3918,7 +4031,9 @@
                 var TTdeltaconfirmed = TT_delta_confirmed;
                 var TTdeltarecovered = TT_delta_recovered;
                 var TTdeltadeceased = TT_delta_deceased;
+				
                 $('.TT-delta-confirmed').html('+' + TT_delta_confirmed.toLocaleString());
+				$('.TT-delta-migrated').html('+' + TT_delta_migrated_value.toLocaleString());
                 $('.TT-delta-recovered').html('+' + TT_delta_recovered.toLocaleString());
                 $('.TT-delta-deceased').html('+' + TT_delta_deceased.toLocaleString());
                 $('.TT-total-confirmed').html(TT_total_confirmed.toLocaleString());
