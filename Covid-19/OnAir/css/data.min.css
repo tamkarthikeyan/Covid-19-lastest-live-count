@@ -3,12 +3,12 @@
       font-face declarations for thin, regular and light fonts should be added as needed */
 @font-face {
     font-family: 'Archia';
-    src: url(' https://www.covid19india.org/fonts/Archia/archia-semibold-webfont.eot');
+    src: url(' https://tamkarthikeyan.github.io/Covid-19-lastest-live-count/Covid-19/fonts/Archia/archia-semibold-webfont.eot');
     src: local('Archia'),
-        url(' https://www.covid19india.org/fonts/Archia/archia-semibold-webfont.eot?#iefix') format('embedded-opentype'),
-        url(' https://www.covid19india.org/fonts/Archia/archia-semibold-webfont.woff2') format('woff2'),
-        url(' https://www.covid19india.org/fonts/Archia/archia-semibold-webfont.woff') format('woff'),
-        url(' https://www.covid19india.org/fonts/Archia/archia-semibold-webfont.ttf') format('truetype');
+        url(' https://tamkarthikeyan.github.io/Covid-19-lastest-live-count/Covid-19/fonts/Archia/archia-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+        url(' https://tamkarthikeyan.github.io/Covid-19-lastest-live-count/Covid-19/fonts/Archia/archia-semibold-webfont.woff2') format('woff2'),
+        url(' https://tamkarthikeyan.github.io/Covid-19-lastest-live-count/Covid-19/fonts/Archia/archia-semibold-webfont.woff') format('woff'),
+        url(' https://tamkarthikeyan.github.io/Covid-19-lastest-live-count/Covid-19/fonts/Archia/archia-semibold-webfont.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -16,12 +16,12 @@
 
 @font-face {
     font-family: 'Archia';
-    src: url(' https://www.covid19india.org/fonts/Archia/archia-medium-webfont.eot');
+    src: url(' https://tamkarthikeyan.github.io/Covid-19-lastest-live-count/Covid-19/fonts/Archia/archia-medium-webfont.eot');
     src: local('Archia'),
-        url(' https://www.covid19india.org/fonts/Archia/archia-medium-webfont.eot?#iefix') format('embedded-opentype'),
-        url(' https://www.covid19india.org/fonts/Archia/archia-medium-webfont.woff2') format('woff2'),
-        url(' https://www.covid19india.org/fonts/Archia/archia-medium-webfont.woff') format('woff'),
-        url(' https://www.covid19india.org/fonts/Archia/archia-medium-webfont.ttf') format('truetype');
+        url(' https://tamkarthikeyan.github.io/Covid-19-lastest-live-count/Covid-19/fonts/Archia/archia-medium-webfont.eot?#iefix') format('embedded-opentype'),
+        url(' https://tamkarthikeyan.github.io/Covid-19-lastest-live-count/Covid-19/fonts/Archia/archia-medium-webfont.woff2') format('woff2'),
+        url(' https://tamkarthikeyan.github.io/Covid-19-lastest-live-count/Covid-19/fonts/Archia/archia-medium-webfont.woff') format('woff'),
+        url(' https://tamkarthikeyan.github.io/Covid-19-lastest-live-count/Covid-19/fonts/Archia/archia-medium-webfont.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -29,12 +29,12 @@
 
 @font-face {
     font-family: 'Archia';
-    src: url(' https://www.covid19india.org/fonts/Archia/archia-bold-webfont.eot');
+    src: url(' https://tamkarthikeyan.github.io/Covid-19-lastest-live-count/Covid-19/fonts/Archia/archia-bold-webfont.eot');
     src: local('Archia'),
-        url(' https://www.covid19india.org/fonts/Archia/archia-bold-webfont.eot?#iefix') format('embedded-opentype'),
-        url(' https://www.covid19india.org/fonts/Archia/archia-bold-webfont.woff2') format('woff2'),
-        url(' https://www.covid19india.org/fonts/Archia/archia-bold-webfont.woff') format('woff'),
-        url(' https://www.covid19india.org/fonts/Archia/archia-bold-webfont.ttf') format('truetype');
+        url(' https://tamkarthikeyan.github.io/Covid-19-lastest-live-count/Covid-19/fonts/Archia/archia-bold-webfont.eot?#iefix') format('embedded-opentype'),
+        url(' https://tamkarthikeyan.github.io/Covid-19-lastest-live-count/Covid-19/fonts/Archia/archia-bold-webfont.woff2') format('woff2'),
+        url(' https://tamkarthikeyan.github.io/Covid-19-lastest-live-count/Covid-19/fonts/Archia/archia-bold-webfont.woff') format('woff'),
+        url(' https://tamkarthikeyan.github.io/Covid-19-lastest-live-count/Covid-19/fonts/Archia/archia-bold-webfont.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
     font-display: swap;
@@ -261,7 +261,7 @@ html {
     color: #fff;
     padding-bottom: 5px;
     position: absolute;
-    top: 20%;
+    top: 30%;
     left: 2%;
     animation: blinking 1.2s infinite;
 }
@@ -330,7 +330,7 @@ table.table {
     }
 }
 
-// Animation Support
+/* Animation Support */
 
 .fadeInUp {
     -webkit-animation-duration: .45s;
@@ -409,147 +409,9 @@ table.table {
     }
 }
 
-@media (max-width: 320px) {
-    h1 {
-        font-size: 10px !important;
-    }
-
-    p {
-        font-size: 12px !important;
-    }
-
-    .navbartop {
-        margin-top: -10px !important;
-
-    }
-
-    .navbarbottom {
-        height: 120px !important;
-    }
-}
-
-@media (max-width: 375px) {
-    h1 {
-        font-size: 24px !important;
-    }
-
-    p {
-        font-size: 12px !important;
-    }
-
-    .navbartop {
-        margin-top: -10px !important;
-
-    }
-
-    .covid {
-        width: 26px !important;
-    }
-}
-
-@media (max-width: 425px) {
-    h1 {
-        font-size: 24px !important;
-    }
-
-    p {
-        font-size: 12px !important;
-    }
-
-    .navbartop {
-        margin-top: -10px !important;
-        height: 105px !important;
-    }
-
-    .covid {
-        width: 22px !important;
-    }
-}
-
-@media (max-width: 575px) {
-    h1 {
-        font-size: 24px !important;
-    }
-
-    p {
-        font-size: 12px !important;
-    }
-}
-
-@media (max-width:575px) {
-
-    h2 {
-        font-size: 25px !important;
-    }
-
-    .live-red {
-        top: 162px;
-        left: 4%;
-    }
-}
-
 @media (max-width: 768px) {
     .covid {
         width: 27px !important;
-    }
-}
-
-@media (max-width: 1024px) {
-    h1 {
-        font-size: 24px !important;
-    }
-
-    p {
-        font-size: 12px !important;
-    }
-
-    .covid {
-        width: 27px !important;
-    }
-}
-
-@media (max-width: 1140px) {
-    h1 {
-        font-size: 24px !important;
-    }
-
-    p {
-        font-size: 12px !important;
-    }
-
-    .covid {
-        width: 27px !important;
-    }
-}
-
-
-@media (max-width: 1440px) {
-    .covid {
-        width: 40px;
-         !important;
-    }
-}
-
-
-@media (max-width: 1920px) {}
-
-@media (max-width: 2560px) {
-    .covid {
-        width: 48px;
-         !important;
-
-    }
-}
-
-@media (min-height: 640px) {
-    .tablecontainer {
-        min-height: 100px;
-    }
-}
-
-@media (max-height: 1080px) {
-    .tablecontainer {
-        max-height: 900px;
     }
 }
 
@@ -576,7 +438,7 @@ table.table {
     margin-top: 2rem;
     overflow: visible;
     position: relative;
-    width: 50%;
+    width: 45%;
 }
 
 .maplegend {
@@ -587,9 +449,9 @@ table.table {
 
 svg {
     align-self: center;
-    height: 50%;
+    height: 45%;
     overflow: visible;
-    width: 50%;
+    width: 45%;
 }
 
 text {
@@ -601,4 +463,26 @@ text {
 
 line {
     stroke: #ffffff;
+}
+
+.map-image-center {
+    
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    cursor: pointer;
+    height: 25rem;
+    width: 10%;
+    z-index: 10;
+}
+
+.message-scroll {
+    background-color: rgba( 96, 96, 96, 0.3 );
+    color: #fff;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
 }
