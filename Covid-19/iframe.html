@@ -374,6 +374,7 @@
             width: 23%;
             z-index: 10;
         }
+
     </style>
 </head>
 
@@ -4505,21 +4506,21 @@
                     $(data.TT.delta).each(function(index, value) {
                         TT_delta_confirmed = value.confirmed;
                         if (typeof TT_delta_confirmed == "undefined") {
-                            TT_delta_confirmed = ' ';
+                            TT_delta_confirmed = '0';
                         } else {
                             TT_delta_confirmed = TT_delta_confirmed;
                         }
 
                         TT_delta_recovered = value.recovered;
                         if (typeof TT_delta_recovered == "undefined") {
-                            TT_delta_recovered = ' ';
+                            TT_delta_recovered = '0';
                         } else {
                             TT_delta_recovered = TT_delta_recovered;
                         }
 
                         TT_delta_deceased = value.deceased;
                         if (typeof TT_delta_deceased == "undefined") {
-                            TT_delta_deceased = ' ';
+                            TT_delta_deceased = '0';
                         } else {
                             TT_delta_deceased = TT_delta_deceased;
                         }
@@ -4591,8 +4592,8 @@
                 Delhi();
                 Uttar_Pradesh();
                 West_Bengal();
-                Telangana();
                 Bihar();
+                Telangana();
                 Gujarat();
                 Assam();
                 Rajasthan();
@@ -4613,9 +4614,9 @@
                 Nagaland();
                 Arunachal_Pradesh();
                 Ladakh();
+                Andaman_and_Nicobar();
                 Dadra_and_Nagar_Haveli_and_Daman_and_Diu();
                 Chandigarh();
-                Andaman_and_Nicobar();
                 Meghalaya();
                 Sikkim();
                 Mizoram();
@@ -4641,6 +4642,9 @@
                 $('.TT-total-deceased').html(TT_total_deceased.toLocaleString());
             }
         });
+
     </script>
 
-</body></html>
+</body>
+
+</html>
