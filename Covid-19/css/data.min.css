@@ -576,7 +576,7 @@ table.table {
     margin-top: 2rem;
     overflow: visible;
     position: relative;
-    width: 50%;
+    width: 45%;
 }
 
 .maplegend {
@@ -587,9 +587,9 @@ table.table {
 
 svg {
     align-self: center;
-    height: 50%;
+    height: 45%;
     overflow: visible;
-    width: 50%;
+    width: 45%;
 }
 
 text {
@@ -602,3 +602,8 @@ text {
 line {
     stroke: #ffffff;
 }
+/*.map-image-center{
+    height: calc(100% - 10px);
+    margin-left: auto;
+    margin-right: auto;
+}*/
