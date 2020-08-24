@@ -263,7 +263,6 @@ html {
     position: absolute;
     top: 30%;
     left: 2%;
-    animation: blinking 1.2s infinite;
 }
 
 .live-clock {
@@ -271,7 +270,9 @@ html {
     color: #ffffff;
     position: absolute;
     top: 30%;
-    left: 7.6%;
+    left: 7.5%;
+}
+.blinking-animation{
     animation: blinking 1.2s infinite;
 }
 
