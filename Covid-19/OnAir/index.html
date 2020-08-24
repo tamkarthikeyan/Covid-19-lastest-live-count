@@ -114,6 +114,7 @@
 
     </style>
 </head>
+
 <body class="noscrollbody background-color">
     <video autoplay muted loop id="myVideo" style="filter:opacity(50%);">
         <source src="assets/comp-video.mp4" type="video/mp4">
@@ -140,6 +141,7 @@
         </div>
         <nav class="navbar navbartop navbar-expand-sm justify-content-center fixed-top fadeOutDown" style="background: rgba(0, 0, 0, 0.5); animation-delay: 250ms; margin-top: -10px; padding-bottom: -50px;">
             <h2><span class="badge live-red">LIVE</span></h2>
+            <h2><span id="clockbox" class="badge live-clock"></span></h2>
             <div class="pt-3 text-center">
                 <h1>Battle Against C<img class="covid" style="margin-top: -5px" src="assets/covid.png" alt="covid" width="32px">vid-1<span class="red" style="font-size: 1.02em ">9</span></h1>
                 <p style="margin-bottom: -1px">India Coronavirus update with Latest Live Count details: Total Confirmed, Total Active, Total Recovered, Total Deceased</p>
@@ -188,6 +190,43 @@
         console.log('reloading..');
         document.getElementById('iframe').contentWindow.location.reload();
     }
+
+    var tday = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    var tmonth = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+    function GetClock() {
+        var d = new Date();
+        var nday = d.getDay(),
+            nmonth = d.getMonth(),
+            ndate = d.getDate(),
+            nyear = d.getFullYear();
+        var nhour = d.getHours(),
+            nmin = d.getMinutes(),
+            nsec = d.getSeconds(),
+            ap;
+
+        if (nhour == 0) {
+            ap = " AM";
+            nhour = 12;
+        } else if (nhour < 12) {
+            ap = " AM";
+        } else if (nhour == 12) {
+            ap = " PM";
+        } else if (nhour > 12) {
+            ap = " PM";
+            nhour -= 12;
+        }
+
+        if (nmin <= 9) nmin = "0" + nmin;
+        if (nsec <= 9) nsec = "0" + nsec;
+
+        //var clocktext = "" + tday[nday] + ", " + tmonth[nmonth] + " " + ndate + ", " + nyear + " " + nhour + ":" + nmin + ":" + nsec + ap + "";
+        var clocktext = nhour + ":" + nmin + ":" + nsec + ap + "";
+        document.getElementById('clockbox').innerHTML = clocktext;
+    }
+
+    GetClock();
+    setInterval(GetClock, 1000);
 
 </script>
 
