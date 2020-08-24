@@ -13,7 +13,7 @@
     <link rel="preload" href=" https://tamkarthikeyan.github.io/Covid-19-lastest-live-count/Covid-19/fonts/Archia/archia-medium-webfont.woff2" as="font" type="font/woff2" crossorigin="">
     <link rel="preload" href=" https://tamkarthikeyan.github.io/Covid-19-lastest-live-count/Covid-19/fonts/Archia/archia-bold-webfont.woff2" as="font" type="font/woff2" crossorigin="">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
 
     <link rel="stylesheet" href="css/data.min.css">
     <script src="js/sortable.js"></script>
@@ -925,27 +925,6 @@
         anim();
         $el.hover(stop, anim);
         
-        var my_time;
-$(document).ready(function() {
-  pageScroll();
-  $("#contain").mouseover(function() {
-    clearTimeout(my_time);
-  }).mouseout(function() {
-    pageScroll();
-  });
-});
-
-function pageScroll() {  
-	var objDiv = document.getElementById("contain");
-  objDiv.scrollTop = objDiv.scrollTop + 1;  
-  $('p:nth-of-type(1)').html('scrollTop : '+ objDiv.scrollTop);
-  $('p:nth-of-type(2)').html('scrollHeight : ' + objDiv.scrollHeight);
-  if (objDiv.scrollTop == (objDiv.scrollHeight - 200)) {
-    objDiv.scrollTop = 0;
-  }
-  my_time = setTimeout('pageScroll()', 25);
-}
-
 
         var api = "https://api.covid19india.org/v4/min/data.min.json?nocache=";
         var tablehtml = '<table id="contentlisttable" class="tableFixHead center" style="width:60%"><thead>' +
@@ -4494,8 +4473,8 @@ function pageScroll() {
                 Himachal_Pradesh();
                 Nagaland();
                 Arunachal_Pradesh();
-                Andaman_and_Nicobar();
                 Chandigarh();
+                Andaman_and_Nicobar();
                 Ladakh();
                 Dadra_and_Nagar_Haveli_and_Daman_and_Diu();
                 Meghalaya();
