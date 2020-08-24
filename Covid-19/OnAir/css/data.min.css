@@ -258,13 +258,23 @@ html {
 
 .live-red {
     background-color: rgba(255, 0, 0, 0.5);
-    color: #ffffff;#747474;
+    color: #ffffff;
     padding-bottom: 5px;
     position: absolute;
     top: 30%;
     left: 2%;
     animation: blinking 1.2s infinite;
 }
+
+.live-clock {
+    background-color: #3f3f3f;
+    color: #ffffff;
+    position: absolute;
+    top: 30%;
+    left: 7.6%;
+    animation: blinking 1.2s infinite;
+}
+
 
 @keyframes blinking {
     50% {
