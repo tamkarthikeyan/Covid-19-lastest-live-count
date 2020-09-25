@@ -13,5 +13,5 @@ I hope this live stream serves as useful information. Please keep track of the n
 
 We acknowledge the hard work of all governments, health care professionals, and other people in controlling the novel coronavirus infection. There are thousands of people every day who risk their lives to help those affected by this pandemic, working day and night to save the lives of others.
 <p align="center">
-<img src="https://tamkarthikeyan.github.io/Covid-19-lastest-live-count/Covid-19/OnAir/assets/thumbnail.png" width="100%">
+<img src="https://tamkarthikeyan.github.io/Covid-19-latest-live-count/Covid-19/OnAir/assets/thumbnail.png" width="100%">
 </p>
