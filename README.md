@@ -3,7 +3,7 @@ India Coronavirus update with Latest Live Count details: Total Confirmed, Total 
 <br>
 
 # YouTube Live 24/7
-[Link](https://youtu.be/BZ8Bv2JRneo)
+[https://youtu.be/BZ8Bv2JRneo](https://youtu.be/BZ8Bv2JRneo)
 
 <p align="center">
 <img src="https://tamkarthikeyan.github.io/Covid-19-lastest-live-count/Covid-19/OnAir/assets/thumbnail.png" width="100%">
