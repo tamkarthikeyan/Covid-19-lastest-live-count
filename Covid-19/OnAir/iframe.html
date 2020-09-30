@@ -4415,8 +4415,8 @@
                         } else {
                             TT_total_tested = TT_total_tested;
                         }
-                        TT_total_migrated_value = TT_total_confirmed - TT_total_migrated - TT_total_recovered - TT_total_deceased;
-                        TT_delta_migrated_value = TT_delta_confirmed - TT_delta_recovered - TT_delta_deceased;
+                        TT_total_migrated_value = Math.abs(TT_total_confirmed - TT_total_migrated - TT_total_recovered - TT_total_deceased);
+                        TT_delta_migrated_value = Math.abs(TT_delta_confirmed - TT_delta_recovered - TT_delta_deceased);
                     });
                     $(data.TT.meta).each(function(index, value) {
                         TT_meta_population = value.population;
